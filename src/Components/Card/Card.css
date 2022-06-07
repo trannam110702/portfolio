@@ -1,0 +1,24 @@
+.card {
+  width: 14rem;
+  height: fit-content;
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 7px solid var(--orangeCard);
+  border-radius: 20px;
+  box-shadow: var(--boxShadow);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 18px 6px;
+  z-index: 1;
+}
+.card > :nth-child(2) {
+  font-weight: bold;
+}
+@media only screen and (max-width: 1023px) {
+  .card {
+    position: static;
+  }
+}
